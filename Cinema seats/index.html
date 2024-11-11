@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS Selectors | Cinema</title>
+    <style>
+        body {
+            background-color: rgb(246, 173, 197);
+            color: white;
+            font-family: Arial;
+        }
+        h1 {
+            text-align: center;
+        }
+        .cinema {
+            /* border: 1px dotted red; */
+            padding: 5px;
+            text-align: center;
+        }
+        .cinema .main span {
+            background-image: url(./Archigraphs-Modern-Chairs-Magenta-Seat.96.png);
+            width: 96px;
+            height: 96px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .front span {
+            background-image: url(./Archigraphs-Modern-Chairs-Magenta-Seat.96.png);
+            width: 96px;
+            height: 96px;
+            display: inline-block;
+        }
+         .cinema .vip span {
+            background-image: url(./Archigraphs-Modern-Chairs-Sphere-Seat.96.png);
+            width: 96px;
+            height: 96px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Advanced CSS Selectors <br> Cinema</h1>
+    <div class="cinema">
+
+        <div class="vip">
+            <h2>VIP</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+                <span>7<br><img src="./Dapino-People-Black-man.48.png" alt="">
+            </span></div>
+        </div>
+
+        <div class="main">
+            <h2>MAIN</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span>
+                <span>4<br><img src="./Itzikgur-My-Seven-Girls-Blue-Dress.48.png" alt=""></span>
+                <span>5<br><img src="./Itzikgur-My-Seven-Girls-Blue-Dress.48.png" alt=""></span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+        </div>
+
+        <div class="front">
+            <h2>FRONT</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
